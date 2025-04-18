@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Winky Rough", sans-serif;
+}
+
+#pointer{
+    width: 30px; 
+    height: 30px;
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.71);
+    opacity: 0.3;
+    box-shadow: 0px 0px 20px 10px rgb(2, 2, 2);
+    border-radius: 100%;
+    position: absolute;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    /* background-color: silver; */
+    padding: 0px; 
+    margin: 10px; 
+}
+
+.logo{
+    width: 7%; 
+    height: 80%;
+    margin: 20px; 
+    padding: 20px; 
+    z-index: 2;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.body-container{
+    display: flex;
+    /* flex-direction: column;  */
+    gap: 2rem; /* Add spacing between the two content blocks */
+    margin: 2rem;
+}
+
+
+.content {
+    width: 300px;
+    height: auto; /* or a fixed height like 300px if you want */
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content:first-child {
+    align-self: flex-end; /* Move first .content to the right */
+    text-align: right;
+}
+
+.content:last-child {
+    align-self: flex-start; /* Move second .content to the left */
+    text-align: left;
+}
+
+#readMore{
+    padding: 5%; 
+    margin: 8%;
+    font-family: "Winky Rough", sans-serif;
+    border: 2px solid black; 
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+
+#readMore:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
